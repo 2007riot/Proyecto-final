@@ -1,0 +1,212 @@
+{
+    "results": [
+        {
+            "perros": [
+                {
+                    "id": "1",
+                    "nombre": "Max",
+                    "raza": "Labrador Retriever",
+                    "tamaño": "Grande",
+                    "cuidados especiales": "Ninguno",
+                    "ubicacion": "Barcelona",
+                    "años": 3,
+                    "gastos de gestion": "500€"
+                },
+                {
+                    "id": "2",
+                    "nombre": "Luna",
+                    "raza": "Bulldog Francés",
+                    "tamaño": "Pequeño",
+                    "cuidados especiales": "Requiere cepillado regular",
+                    "ubicacion": "Barcelona",
+                    "años": 2,
+                    "gastos de gestion": "400€"
+                },
+                {
+                    "id": "3",
+                    "nombre": "Rocky",
+                    "raza": "Golden Retriever",
+                    "tamaño": "Mediano",
+                    "cuidados especiales": "Necesita ejercicio regular",
+                    "ubicacion": "Barcelona",
+                    "años": 4,
+                    "gastos de gestion": "450€"
+                },
+                {
+                    "id": "4",
+                    "nombre": "Bella",
+                    "raza": "Shih Tzu",
+                    "tamaño": "Pequeño",
+                    "cuidados especiales": "Requiere cuidado dental",
+                    "ubicacion": "Barcelona",
+                    "años": 3,
+                    "gastos de gestion": "450€"
+                },
+                {
+                    "id": "5",
+                    "nombre": "Maximus",
+                    "raza": "Doberman",
+                    "tamaño": "Grande",
+                    "cuidados especiales": "Entrenamiento regular necesario",
+                    "ubicacion": "Barcelona",
+                    "años": 2,
+                    "gastos de gestion": "350€"
+                },
+                {
+                    "id": "6",
+                    "nombre": "Coco",
+                    "raza": "Chihuahua",
+                    "tamaño": "Miniatura",
+                    "cuidados especiales": "Protección contra el frío",
+                    "ubicacion": "Barcelona",
+                    "años": 1,
+                    "gastos de gestion": "250€"
+                },
+                {
+                    "id": "7",
+                    "nombre": "Charlie",
+                    "raza": "Boxer",
+                    "tamaño": "Grande",
+                    "cuidados especiales": "Necesita ejercicio diario",
+                    "ubicacion": "Barcelona",
+                    "años": 5,
+                    "gastos de gestion": "500€"
+                },
+                {
+                    "id": "8",
+                    "nombre": "Daisy",
+                    "raza": "Cavalier King Charles",
+                    "tamaño": "Mediano",
+                    "cuidados especiales": "Requiere cuidado de las orejas",
+                    "ubicacion": "Barcelona",
+                    "años": 2,
+                    "gastos de gestion": "450€"
+                },
+                {
+                    "id": "9",
+                    "nombre": "Rex",
+                    "raza": "Dachshund",
+                    "tamaño": "Pequeño",
+                    "cuidados especiales": "Necesita control de peso",
+                    "ubicacion": "Barcelona",
+                    "años": 3,
+                    "gastos de gestion": "250€"
+                },
+                {
+                    "id": "10",
+                    "nombre": "Lucy",
+                    "raza": "Poodle",
+                    "tamaño": "Mediano",
+                    "cuidados especiales": "Corte de pelo regular",
+                    "ubicacion": "Barcelona",
+                    "años": 4,
+                    "gastos de gestion": "350€"
+                }
+            ]
+        },
+        {
+            "gatos": [
+                {
+                    "id": "11",
+                    "nombre": "Whiskers",
+                    "raza": "Siamés",
+                    "tamaño": "Mediano",
+                    "cuidados especiales": "Necesita juguetes interactivos",
+                    "ubicacion": "Barcelona",
+                    "años": 1,
+                    "gastos de gestion": "150€"
+                },
+                {
+                    "id": "12",
+                    "nombre": "Milo",
+                    "raza": "Persa",
+                    "tamaño": "Pequeño",
+                    "cuidados especiales": "Pelaje largo, requiere cepillado diario",
+                    "ubicacion": "Barcelona",
+                    "años": 4,
+                    "gastos de gestion": "450€"
+                },
+                {
+                    "id": "13",
+                    "nombre": "Oliver",
+                    "raza": "Maine Coon",
+                    "tamaño": "Grande",
+                    "cuidados especiales": "Necesita espacio para trepar",
+                    "ubicacion": "Barcelona",
+                    "años": 2,
+                    "gastos de gestion": "600€"
+                },
+                {
+                    "id": "14",
+                    "nombre": "Luna",
+                    "raza": "Bengala",
+                    "tamaño": "Mediano",
+                    "cuidados especiales": "Necesita ejercicio regular",
+                    "ubicacion": "Barcelona",
+                    "años": 3,
+                    "gastos de gestion": "450€"
+                },
+                {
+                    "id": "15",
+                    "nombre": "Simba",
+                    "raza": "Sphynx",
+                    "tamaño": "Pequeño",
+                    "cuidados especiales": "Requiere protección solar",
+                    "ubicacion": "Barcelona",
+                    "años": 1,
+                    "gastos de gestion": "700€"
+                },
+                {
+                    "id": "16",
+                    "nombre": "Cleo",
+                    "raza": "Ragdoll",
+                    "tamaño": "Mediano",
+                    "cuidados especiales": "Pelaje largo, necesita cepillado",
+                    "ubicacion": "Barcelona",
+                    "años": 2,
+                    "gastos de gestion": "550€"
+                },
+                {
+                    "id": "17",
+                    "nombre": "Nala",
+                    "raza": "Scottish Fold",
+                    "tamaño": "Pequeño",
+                    "cuidados especiales": "Orejas dobladas, requiere limpieza",
+                    "ubicacion": "Barcelona",
+                    "años": 3,
+                    "gastos de gestion": "390€"
+                },
+                {
+                    "id": "18",
+                    "nombre": "Oscar",
+                    "raza": "British Shorthair",
+                    "tamaño": "Mediano",
+                    "cuidados especiales": "Corte de uñas regular",
+                    "ubicacion": "Barcelona",
+                    "años": 4,
+                    "gastos de gestion": "480€"
+                },
+                {
+                    "id": "19",
+                    "nombre": "Zoe",
+                    "raza": "Siamese",
+                    "tamaño": "Pequeño",
+                    "cuidados especiales": "Juegos interactivos",
+                    "ubicacion": "Barcelona",
+                    "años": 2,
+                    "gastos de gestion": "490€"
+                },
+                {
+                    "id": "20",
+                    "nombre": "Gizmo",
+                    "raza": "Cornish Rex",
+                    "tamaño": "Mediano",
+                    "cuidados especiales": "Pelaje corto, fácil mantenimiento",
+                    "ubicacion": "Barcelona",
+                    "años": 1,
+                    "gastos de gestion": "290€"
+                }
+            ]
+        }
+    ]
+}
