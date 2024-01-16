@@ -10,7 +10,8 @@
                     "cuidadosEspeciales": "Ninguno",
                     "ubicacion": "Barcelona",
                     "años": 3,
-                    "gastosDeGestion": "500€"
+                    "gastosDeGestion": "500€",
+                    "imagen": "https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id": "2",
@@ -20,7 +21,8 @@
                     "cuidadosEspeciales": "Requiere cepillado regular",
                     "ubicacion": "Barcelona",
                     "años": 2,
-                    "gastosDeGestion": "400€"
+                    "gastosDeGestion": "400€",
+                    "imagen": "https://images.pexels.com/photos/776078/pexels-photo-776078.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id": "3",
@@ -30,7 +32,8 @@
                     "cuidadosEspeciales": "Necesita ejercicio regular",
                     "ubicacion": "Barcelona",
                     "años": 4,
-                    "gastosDeGestion": "450€"
+                    "gastosDeGestion": "450€",
+                    "imagen": "https://images.pexels.com/photos/2409503/pexels-photo-2409503.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id": "4",
@@ -40,7 +43,8 @@
                     "cuidadosEspeciales": "Requiere cuidado dental",
                     "ubicacion": "Barcelona",
                     "años": 3,
-                    "gastosDeGestion": "450€"
+                    "gastosDeGestion": "450€",
+                    "imagen": "https://images.pexels.com/photos/104115/pexels-photo-104115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id": "5",
@@ -50,7 +54,8 @@
                     "cuidadosEspeciales": "Entrenamiento regular necesario",
                     "ubicacion": "Barcelona",
                     "años": 2,
-                    "gastosDeGestion": "350€"
+                    "gastosDeGestion": "350€",
+                    "imagen": "https://images.pexels.com/photos/975413/pexels-photo-975413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id": "6",
@@ -60,7 +65,8 @@
                     "cuidadosEspeciales": "Protección contra el frío",
                     "ubicacion": "Barcelona",
                     "años": 1,
-                    "gastosDeGestion": "250€"
+                    "gastosDeGestion": "250€",
+                    "imagen": "https://images.pexels.com/photos/206014/pexels-photo-206014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id": "7",
@@ -70,7 +76,8 @@
                     "cuidadosEspeciales": "Necesita ejercicio diario",
                     "ubicacion": "Barcelona",
                     "años": 5,
-                    "gastosDeGestion": "500€"
+                    "gastosDeGestion": "500€",
+                    "imagen": ""
                 },
                 {
                     "id": "8",
@@ -80,7 +87,8 @@
                     "cuidadosEspeciales": "Requiere cuidado de las orejas",
                     "ubicacion": "Barcelona",
                     "años": 2,
-                    "gastosDeGestion": "450€"
+                    "gastosDeGestion": "450€",
+                    "imagen": "https://images.pexels.com/photos/1769538/pexels-photo-1769538.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id": "9",
@@ -90,7 +98,8 @@
                     "cuidadosEspeciales": "Necesita control de peso",
                     "ubicacion": "Barcelona",
                     "años": 3,
-                    "gastosDeGestion": "250€"
+                    "gastosDeGestion": "250€",
+                    "imagen": "https://images.pexels.com/photos/3104708/pexels-photo-3104708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 },
                 {
                     "id": "10",
@@ -100,7 +109,8 @@
                     "cuidadosEspeciales": "Corte de pelo regular",
                     "ubicacion": "Barcelona",
                     "años": 4,
-                    "gastosDeGestion": "350€"
+                    "gastosDeGestion": "350€",
+                    "imagen": "https://images.pexels.com/photos/1407167/pexels-photo-1407167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                 }
             ]
         },
@@ -114,7 +124,8 @@
                     "cuidadosEspeciales": "Necesita juguetes interactivos",
                     "ubicacion": "Barcelona",
                     "años": 1,
-                    "gastosDeGestion": "150€"
+                    "gastosDeGestion": "150€",
+                    "imagen": "https://www.pexels.com/es-es/foto/mono-adorable-peludo-felino-10905671/"
                 },
                 {
                     "id": "12",
@@ -124,7 +135,8 @@
                     "cuidadosEspeciales": "Pelaje largo, requiere cepillado diario",
                     "ubicacion": "Barcelona",
                     "años": 4,
-                    "gastosDeGestion": "450€"
+                    "gastosDeGestion": "450€",
+                    "imagen": "https://www.pexels.com/es-es/foto/gafas-de-sol-mascota-mono-gato-11132972/"
                 },
                 {
                     "id": "13",
@@ -134,7 +146,8 @@
                     "cuidadosEspeciales": "Necesita espacio para trepar",
                     "ubicacion": "Barcelona",
                     "años": 2,
-                    "gastosDeGestion": "600€"
+                    "gastosDeGestion": "600€",
+                    "imagen": "https://www.pexels.com/es-es/foto/animal-mascota-mono-gris-18345406/"
                 },
                 {
                     "id": "14",
@@ -144,7 +157,8 @@
                     "cuidadosEspeciales": "Necesita ejercicio regular",
                     "ubicacion": "Barcelona",
                     "años": 3,
-                    "gastosDeGestion": "450€"
+                    "gastosDeGestion": "450€",
+                    "imagen": "https://www.pexels.com/es-es/foto/gato-atigrado-marron-tumbado-en-el-suelo-blanco-5427090/"
                 },
                 {
                     "id": "15",
@@ -154,7 +168,8 @@
                     "cuidadosEspeciales": "Requiere protección solar",
                     "ubicacion": "Barcelona",
                     "años": 1,
-                    "gastosDeGestion": "700€"
+                    "gastosDeGestion": "700€",
+                    "imagen": "https://www.pexels.com/es-es/foto/fotografia-de-enfoque-selectivo-del-gato-esfinge-acostado-en-la-colcha-991831/"
                 },
                 {
                     "id": "16",
@@ -164,7 +179,8 @@
                     "cuidadosEspeciales": "Pelaje largo, necesita cepillado",
                     "ubicacion": "Barcelona",
                     "años": 2,
-                    "gastosDeGestion": "550€"
+                    "gastosDeGestion": "550€",
+                    "imagen": "https://www.pexels.com/es-es/foto/animal-mascota-sentado-mirando-6441460/"
                 },
                 {
                     "id": "17",
@@ -174,7 +190,8 @@
                     "cuidadosEspeciales": "Orejas dobladas, requiere limpieza",
                     "ubicacion": "Barcelona",
                     "años": 3,
-                    "gastosDeGestion": "390€"
+                    "gastosDeGestion": "390€",
+                    "imagen": "https://www.pexels.com/es-es/foto/mascota-mono-pelo-gatito-19698234/"
                 },
                 {
                     "id": "18",
@@ -184,7 +201,8 @@
                     "cuidadosEspeciales": "Corte de uñas regular",
                     "ubicacion": "Barcelona",
                     "años": 4,
-                    "gastosDeGestion": "480€"
+                    "gastosDeGestion": "480€",
+                    "imagen": "https://www.pexels.com/es-es/foto/rocas-mascota-mono-gris-9013073/"
                 },
                 {
                     "id": "19",
@@ -194,7 +212,8 @@
                     "cuidadosEspeciales": "Juegos interactivos",
                     "ubicacion": "Barcelona",
                     "años": 2,
-                    "gastosDeGestion": "490€"
+                    "gastosDeGestion": "490€",
+                    "imagen": "https://www.pexels.com/es-es/foto/gato-marron-357141/"
                 },
                 {
                     "id": "20",
@@ -204,7 +223,8 @@
                     "cuidadosEspeciales": "Pelaje corto, fácil mantenimiento",
                     "ubicacion": "Barcelona",
                     "años": 1,
-                    "gastosDeGestion": "290€"
+                    "gastosDeGestion": "290€",
+                    "imagen": "https://www.pexels.com/es-es/foto/naturaleza-pared-animal-mascota-19770796/"
                 }
             ]
         }
