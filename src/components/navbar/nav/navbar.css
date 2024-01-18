@@ -1,0 +1,22 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+ */.navbar {
+    color: FF9088;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    background: #FFF;
+}
+
+.navlink {
+    justify-content: flex-start;
+    width: 227px;
+    color: #FF9088;
+    font-family: Manrope;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    margin: 38px 28px;
+}

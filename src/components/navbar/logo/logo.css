@@ -1,0 +1,8 @@
+.logo{
+width: 195px;
+height: 190px;
+flex-shrink: 0;
+background:  lightgray 50% / contain no-repeat;
+margin: 25px 623px 1128px 622px ;
+fill: red;
+}
