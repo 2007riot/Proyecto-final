@@ -10,7 +10,7 @@
             "ubicacion": "Barcelona",
             "años": 3,
             "gastosDeGestion": "500€",
-            "imagen": "https://images.pexels.com/photos/2253275/pexels-photo-2253275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "imagen": "https://images.pexels.com/photos/998251/pexels-photo-998251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
             "id": "2",
@@ -58,7 +58,7 @@
             "ubicacion": "Barcelona",
             "años": 2,
             "gastosDeGestion": "350€",
-            "imagen": "https://images.pexels.com/photos/975413/pexels-photo-975413.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "imagen": "https://images.pexels.com/photos/13570482/pexels-photo-13570482.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
             "id": "6",
@@ -88,7 +88,7 @@
             "id": "8",
             "tipo": "perro",
             "nombre": "Daisy",
-            "raza": "Cavalier King Charles",
+            "raza": "Cavalier Charles",
             "tamaño": "Mediano",
             "cuidadosEspeciales": "Requiere cuidado de las orejas",
             "ubicacion": "Barcelona",
@@ -166,7 +166,7 @@
             "ubicacion": "Barcelona",
             "años": 3,
             "gastosDeGestion": "450€",
-            "imagen": "https://images.pexels.com/photos/5427090/pexels-photo-5427090.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            "imagen": "https://images.pexels.com/photos/15802496/pexels-photo-15802496/free-photo-of-animal-mascota-mono-gatito.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
             "id": "15",
