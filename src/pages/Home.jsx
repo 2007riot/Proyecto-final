@@ -1,8 +1,8 @@
-
+import Filter from "../components/Filter/Filter"
 
 function Home() {
   return (
-    <div>Soy el home</div>
+    <Filter/>
   )
 }
 
