@@ -1,9 +1,11 @@
-import Header from "../components/home/header"
-
+import Header from "../components/header/Header"
+import BotonAdopta from "../components/header/botonAdopta/BotonAdopta"
 
 function Home() {
   return (
-    <Header />
+    <>
+        <Header />
+    </>
   )
 }
 

@@ -1,0 +1,12 @@
+@import "src/variables-css/variables.css";
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid;
+    border-radius: 50px;
+    color: var(--text-color);
+    /* margin: 0 15% 0 15%; */
+    justify-content: space-around;
+    align-content: stretch;
+}
