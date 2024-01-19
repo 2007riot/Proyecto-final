@@ -1,8 +1,11 @@
-import Filter from "../components/Filter/Filter"
+import Header from "../components/header/Header"
+import BotonAdopta from "../components/header/botonAdopta/BotonAdopta"
 
 function Home() {
   return (
-    <Filter/>
+    <>
+        <Header />
+    </>
   )
 }
 
