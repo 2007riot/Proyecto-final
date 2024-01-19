@@ -1,6 +1,6 @@
 import './header.css';
-import BotonAdopta from "C:/Users/cris_/Documents/FACTORIA-F5/adopta-amor/Proyecto-final/src/components/header/botonAdopta/BotonAdopta.jsx"
-import BotonDona from "C:/Users/cris_/Documents/FACTORIA-F5/adopta-amor/Proyecto-final/src/components/header/botonDona/BotonDona.jsx"
+import BotonAdopta from "./botonAdopta/BotonAdopta.jsx"
+import BotonDona from "./botonDona/BotonDona.jsx"
 
 
 const Header = () => {
