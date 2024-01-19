@@ -1,0 +1,9 @@
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+.main {
+    /* Asegúrate de que .main tenga una altura suficiente para permitir el desplazamiento */
+    min-height: 100vh;
+}

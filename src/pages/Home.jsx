@@ -4,7 +4,6 @@ import BotonAdopta from "../components/header/botonAdopta/BotonAdopta"
 function Home() {
   return (
     <>
-        <Header />
     </>
   )
 }

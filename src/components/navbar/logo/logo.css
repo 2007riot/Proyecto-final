@@ -1,9 +1,9 @@
 .logo {
-    width: 7%;
-    text-align: center;
-    margin: 8px 500px auto auto;
+    width: 10%;
+    display: block;
+    margin: 18px 500px auto 400px;
 }
 
 .logo:hover{
-    width: 7.05%;
+    width: 10.1%;
 }
