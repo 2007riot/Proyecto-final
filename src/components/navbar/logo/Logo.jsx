@@ -1,9 +1,10 @@
+import "./logo.css";
+
 const Logo = () =>
 {
     return (
-        <div className='logo'>
-            <img src="src\assets\images\logo-no-background.svg" />
-        </div> )
+        <img className='logo' src="src\assets\images\logo-no-background.svg" />
+    )
 
 }
 
