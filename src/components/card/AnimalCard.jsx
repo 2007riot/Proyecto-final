@@ -2,6 +2,7 @@ import "./animalCard.css";
 
 const AnimalCard = ({ animal }) => {
   return (
+    <div className="cardContainer">
     <div className="card">
       <img src={animal.imagen} alt={animal.nombre} className="card--imagen" />
       <div className="card--componentes">
@@ -21,6 +22,7 @@ const AnimalCard = ({ animal }) => {
           </button>
         </div>
       </div>
+    </div>
     </div>
   );
 };
