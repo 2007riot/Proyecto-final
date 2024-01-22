@@ -22,7 +22,8 @@ export const router = createBrowserRouter([{
             element: <Adoptar />
         },
         {
-            path: "/animal-info",
+            path: `/animal-info/:id`
+            ,
             element: <AnimalInfo />
         },
         {
