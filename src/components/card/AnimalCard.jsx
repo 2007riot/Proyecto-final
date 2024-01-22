@@ -1,4 +1,5 @@
 import "./animalCard.css";
+import { NavLink } from "react-router-dom";
 
 const AnimalCard = ({ animal }) => {
   return (
@@ -12,13 +13,14 @@ const AnimalCard = ({ animal }) => {
           </p>
         </div>
         <div>
-          <button className="card--componentes--button">
+          <NavLink to={`/animal-info/${animal.id}`}><button className="card--componentes--button">
             <img
               src="src/assets/iconoInfo.png"
               alt="iconInfo"
               className="card--componentes--icono"
             />
           </button>
+          </NavLink>
         </div>
       </div>
     </div>
