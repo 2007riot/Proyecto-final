@@ -1,8 +1,10 @@
-
+import Formulario from "../components/formulario/Formulario";
 
 const Casita = () => {
   return (
-    <div>soy Casita</div>
+    <>
+      <Formulario />
+    </>
   )
 }
 
