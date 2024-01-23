@@ -1,17 +1,15 @@
-@import "src/variables-css/variables.css";
-
-body {
-    margin: 0;
-}
-
+a {
+    text-decoration: none; /* Quita la subrayado del enlace */
+    color: inherit; /* Usa el color del texto del elemento padre */
+    cursor: pointer; /* Cambia el cursor al estilo predeterminado de un enlace */
+  }
 
 footer {
     background-color: var(--grey-color);
-    font-family: 'Manrope', sans-serif;
+    color: white;
     width: 80%;
     padding: 20px 10%;
     display: flex;
-    color: white;
     flex-wrap: wrap;
 }
 
@@ -22,6 +20,10 @@ footer {
 .footer-logo {
     width: 90px;
     margin-bottom:10px;
+}
+
+.footer-naming-solo-mobile {
+    display: none;
 }
 
 .footer-segundo-bloque {
@@ -49,8 +51,36 @@ footer ul {
    /* @media móvil */
    @media only screen and (max-width: 360px) {
 
-    .container-header {
-     background-position: 70% 50%; 
+    .footer-primer-bloque {
+        width: 100%;
     }
 
+    .footer-segundo-bloque {
+        width: 100%;
+    }
+
+    .footer-nav-descubrir {
+        display: none;
+    }
+
+    .footer-nav-info {
+        display: none;
+    }
+
+    footer {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-naming-solo-mobile {
+        display: block;
+    }
+    
+    .footer-logo {
+        display: none;
+    }
+    
+    .footer-redes-sociales {
+        margin: auto;
+    }
  }

@@ -1,4 +1,6 @@
 import './footer.css';
+import { NavLink } from "react-router-dom";
+
 
 const Footer = () => {
   return (
@@ -6,6 +8,7 @@ const Footer = () => {
 
       <div className='footer-primer-bloque'>
           <img className="footer-logo" src="src/assets/images/logoblanco.png" alt="Logo" />
+          <h3 className='footer-naming-solo-mobile'>Adopta amor</h3>
           <p>C/ de la Diputació, 150 <br></br>
           L'Eixample, 08007 Barcelona <br></br>
           +34611234567</p>
@@ -17,8 +20,8 @@ const Footer = () => {
           <h3>Descubrir</h3>
           <ul>
             <li>Cómo funciona</li>
-            <li>Adopta</li>
-            <li>Donar</li>
+            <li><NavLink className='navlink' to='/Adoptar'>Adopta</NavLink></li>
+            <li><NavLink className='navlink' to='/Donar'>Dona</NavLink></li>
           </ul>
         </div>
 

@@ -1,9 +1,14 @@
-html,
+@import "src/variables-css/variables.css";
+
+* {
+    font-family: var(--fuente-principal);
+}
+
 body {
-    scroll-behavior: smooth;
+    margin: 0;
+
 }
 
 .main {
-    /* Asegúrate de que .main tenga una altura suficiente para permitir el desplazamiento */
     min-height: 100vh;
 }
