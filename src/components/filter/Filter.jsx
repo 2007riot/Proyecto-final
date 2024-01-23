@@ -1,5 +1,7 @@
 import { useState } from "react"
 import "./Filter.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 
 const Filter = ({ onClick }) => {
     const [isAnimalListOpen, setAnimalListOpen] = useState(false)
@@ -38,7 +40,7 @@ const Filter = ({ onClick }) => {
         <div className="filter">
             {/* Animal filter */}
             <button className="filterField filterFieldRadiusLeft" onClick={toggleAnimal}>
-                Animales <span>▼</span>
+                Animales  <FontAwesomeIcon icon={faCaretDown} />
                 {isAnimalListOpen ? (
                     <ul>
                         <li onClick={() => onClick("tipo", "perro")}>Perros</li>
@@ -48,7 +50,7 @@ const Filter = ({ onClick }) => {
             </button>
 
             {/* Tamaño filter */}
-            <button className="filterField" onClick={toggleTamano}>Tamaño <span>▼</span>
+            <button className="filterField" onClick={toggleTamano}>Tamaño  <FontAwesomeIcon icon={faCaretDown} />
                 {isTamanoListOpen ? (
                     <ul>
                         <li onClick={() => onClick("tamano", "Pequeño")}>Pequeño</li>
@@ -60,7 +62,7 @@ const Filter = ({ onClick }) => {
 
             {/* Provincia filter */}
             <button className="filterField" onClick={toggleProvincia}>
-                Provincia <span>▼</span>
+                Provincia  <FontAwesomeIcon icon={faCaretDown} />
                 {isProvinciaListOpen ? (
                     <ul>
                         <li onClick={() => onClick("ubicacion", "Barcelona")}>Barcelona</li>
@@ -69,7 +71,7 @@ const Filter = ({ onClick }) => {
             </button>
 
             <button className="filterField filterFieldRadiusRight" onClick={toggleEdad}>
-                Edad <span>▼</span>
+                Edad  <FontAwesomeIcon icon={faCaretDown} />
                 {isEdadListOpen ? (
                     <ul>
                         <li onClick={() => onClick("edad", "Cachorrito")}>Cachorrito</li>
