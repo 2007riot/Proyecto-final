@@ -66,14 +66,12 @@ const Adoptar = () => {
 })
 
   return (
-    <>
+    <div>
       <Filter onClick={handleFilterChange} />
-
-      
       {filteredAnimales.map((animal) => (
         <AnimalCard key={animal.id} animal={animal} />
       ))}
-    </>
+    </div>
   )
 }
 
