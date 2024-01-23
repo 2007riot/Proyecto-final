@@ -3,8 +3,6 @@ import Navbar from "../components/navbar/nav/Navbar"
 import Footer from "../components/footer/Footer"
 import Header from '../components/header/Header'
 import './layout.css'
-
-
 const Layout = () => {
     return (
         <>
@@ -17,4 +15,3 @@ const Layout = () => {
 }
 
 export default Layout
-
