@@ -37,18 +37,18 @@ const Filter = ({ onClick }) => {
     return (
         <div className="filter">
             {/* Animal filter */}
-            <button className="filterField" onClick={toggleAnimal}>
-                Animal
+            <button className="filterField filterFieldRadiusLeft" onClick={toggleAnimal}>
+                Animales <span>▼</span>
                 {isAnimalListOpen ? (
                     <ul>
-                        <li onClick={() => onClick("tipo", "perro")}>Perro</li>
-                        <li onClick={() => onClick("tipo", "gato")}>Gato</li>
+                        <li onClick={() => onClick("tipo", "perro")}>Perros</li>
+                        <li onClick={() => onClick("tipo", "gato")}>Gatos</li>
                     </ul>
                 ) : null}
             </button>
 
             {/* Tamaño filter */}
-            <button className="filterField" onClick={toggleTamano}>Tomaño
+            <button className="filterField" onClick={toggleTamano}>Tamaño <span>▼</span>
                 {isTamanoListOpen ? (
                     <ul>
                         <li onClick={() => onClick("tamano", "Pequeño")}>Pequeño</li>
@@ -60,7 +60,7 @@ const Filter = ({ onClick }) => {
 
             {/* Provincia filter */}
             <button className="filterField" onClick={toggleProvincia}>
-                Provincia
+                Provincia <span>▼</span>
                 {isProvinciaListOpen ? (
                     <ul>
                         <li onClick={() => onClick("ubicacion", "Barcelona")}>Barcelona</li>
@@ -68,8 +68,8 @@ const Filter = ({ onClick }) => {
                 ) : null}
             </button>
 
-            <button className="filterField" onClick={toggleEdad}>
-                Edad
+            <button className="filterField filterFieldRadiusRight" onClick={toggleEdad}>
+                Edad <span>▼</span>
                 {isEdadListOpen ? (
                     <ul>
                         <li onClick={() => onClick("edad", "Cachorrito")}>Cachorrito</li>

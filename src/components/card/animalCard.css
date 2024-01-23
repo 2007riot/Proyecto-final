@@ -1,20 +1,27 @@
 @import "src/variables-css/variables.css";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
-.cardContainer {
+* {
+  font-family: Manrope;
+  box-sizing: border-box;
+}
+
+
+main {
   width: 100%;
   padding-top: 2em;
   padding-bottom: 2em;
 
   display: grid;
-  grid-template-columns: repeat(3, 20%);
-
-  column-gap: 7em;
+  grid-template-columns: repeat(3, 30%);
+  justify-items: center;
+  column-gap: 2em;
   row-gap: 4em;
   align-items: center;
   justify-content: center;
 
   font-family: Manrope;
+  padding-inline: 4em;
 }
 
 
@@ -27,6 +34,7 @@
   align-items: center;
   margin: 1em;
 }
+
 
 .card:hover {
   background-color: var(--main-color-light);
@@ -67,7 +75,7 @@
 }
 
 .card--componentes--icono {
-  width: 30px;
+  width: 55px;
   cursor: pointer;
   padding-right: 2em;
 }
