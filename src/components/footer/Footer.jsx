@@ -1,7 +1,6 @@
 import './footer.css';
 import { NavLink } from "react-router-dom";
 
-
 const Footer = () => {
   return (
     <footer>
@@ -20,8 +19,8 @@ const Footer = () => {
           <h3>Descubrir</h3>
           <ul>
             <li>Cómo funciona</li>
-            <li><NavLink className='navlink' to='/Adoptar'>Adopta</NavLink></li>
-            <li><NavLink className='navlink' to='/Donar'>Dona</NavLink></li>
+            <li><NavLink to='/Adoptar'>Adopta</NavLink></li>
+            <li><NavLink to='/Donar'>Dona</NavLink></li>
           </ul>
         </div>
 

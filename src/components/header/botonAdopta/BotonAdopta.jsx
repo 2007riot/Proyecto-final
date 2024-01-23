@@ -1,8 +1,9 @@
+import { NavLink } from "react-router-dom";
 import "./botonAdopta.css"
 
 const BotonAdopta = () => {
   return (
-    <button className="button-adopta" >Adopta</button>
+    <NavLink to='/adoptar'><button className="button-adopta" >Adopta</button></NavLink>
   )
 }
 

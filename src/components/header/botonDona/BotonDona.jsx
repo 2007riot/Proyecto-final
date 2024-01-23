@@ -1,8 +1,11 @@
+import { NavLink } from "react-router-dom";
 import "./botonDona.css"
 
 const BotonDona = () => {
   return (
-    <button className='button-dona' >Dona</button>
+    
+    <NavLink to='/donar'><button className='button-dona' >Dona</button></NavLink>
+
   )
 }
 
