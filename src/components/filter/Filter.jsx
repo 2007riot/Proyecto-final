@@ -37,19 +37,18 @@ const Filter = ({ onClick }) => {
     return (
         <div className="filter">
             {/* Animal filter */}
-            <div className="filterField">
-                <span onClick={toggleAnimal}>Animal</span>
+            <button className="filterField" onClick={toggleAnimal}>
+                Animal
                 {isAnimalListOpen ? (
                     <ul>
                         <li onClick={() => onClick("tipo", "perro")}>Perro</li>
                         <li onClick={() => onClick("tipo", "gato")}>Gato</li>
                     </ul>
                 ) : null}
-            </div>
+            </button>
 
             {/* Tamaño filter */}
-            <div className="filterField">
-                <span onClick={toggleTamano}>Tomaño</span>
+            <button className="filterField" onClick={toggleTamano}>Tomaño
                 {isTamanoListOpen ? (
                     <ul>
                         <li onClick={() => onClick("tamano", "Pequeño")}>Pequeño</li>
@@ -57,27 +56,27 @@ const Filter = ({ onClick }) => {
                         <li onClick={() => onClick("tamano", "Grande")}>Grande</li>
                     </ul>
                 ) : null}
-            </div>
+            </button>
 
             {/* Provincia filter */}
-            <div className="filterField">
-                <span onClick={toggleProvincia}>Provincia</span>
+            <button className="filterField" onClick={toggleProvincia}>
+                Provincia
                 {isProvinciaListOpen ? (
                     <ul>
                         <li onClick={() => onClick("ubicacion", "Barcelona")}>Barcelona</li>
                     </ul>
                 ) : null}
-            </div>
+            </button>
 
-            <div className="filterField">
-                <span onClick={toggleEdad}>Edad</span>
+            <button className="filterField" onClick={toggleEdad}>
+                Edad
                 {isEdadListOpen ? (
                     <ul>
                         <li onClick={() => onClick("edad", "Cachorrito")}>Cachorrito</li>
                         <li onClick={() => onClick("edad", "Adulto")}>Adulto</li>
                     </ul>
                 ) : null}
-            </div>
+            </button>
         </div>
     )
 }
