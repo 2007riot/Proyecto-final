@@ -11,8 +11,8 @@
     color: var(--text-color);
     grid-column-start: 1;
     grid-column-end: 4;
-/*     position: relative; */
-
+    /*     position: relative; */
+    
 }
 
 .filterField {
@@ -81,3 +81,19 @@
 li:hover {
     background-color: var(--main-color-light);
 }
+
+/* @media tablet */
+@media only screen and (max-width: 768px) {
+    .filter {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+/* @media móvil */
+@media only screen and (max-width: 360px) {
+    .filter {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+  }
