@@ -1,8 +1,11 @@
+import Formulario from "../components/formulario/Formulario"
 
 
 const Donar = () => {
   return (
-    <div> soy Donar</div>
+    <div>
+      <Formulario />
+    </div>
   )
 }
 
