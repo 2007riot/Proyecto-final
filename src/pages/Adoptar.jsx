@@ -22,18 +22,24 @@ const Adoptar = () => {
 
   const handleFilterChange = (category, value) => {
     setFilterCriteria((prevFilterCriteria) => {
-      // Reset other filter values when a new filter is selected
+
       const updatedFilterCriteria = {
         [category]: value,
       }
-  
-      // Reset other filters
-      Object.keys(prevFilterCriteria).forEach((key) => {
-        if (key !== category) {
+
+      //filter delete or basically checking if it null or empty string then myFilteredAnimals will be all animals
+      if (value === null || value === "") {
+        Object.keys(prevFilterCriteria).forEach((key) => {
           updatedFilterCriteria[key] = null
-        }
-      })
-  
+        })
+      } else {
+        //reset filters when new filter is clicked 
+        Object.keys(prevFilterCriteria).forEach((key) => {
+          if (key !== category) {
+            updatedFilterCriteria[key] = null
+          }
+        })
+      }
       return updatedFilterCriteria
     })
   }
@@ -45,25 +51,21 @@ const Adoptar = () => {
     if (filterCriteria.tamano && animal.tamaño !== filterCriteria.tamano) {
       return false
     }
-    if (filterCriteria.ubicacion && animal.ubicacion !== filterCriteria.ubicacion) {
-      return false
-    }
+    // Edad filter logic
+    if (filterCriteria.edad) {
+      const edad = animal.años
 
-     // Edad filter logic
-  if (filterCriteria.edad) {
-    const edad = animal.años
-
-    switch (filterCriteria.edad) {
-      case "Cachorrito":
-        return edad >= 0 && edad <= 1
-      case "Adulto":
-        return edad > 1 && edad < 5
-      default:
-        return true
+      switch (filterCriteria.edad) {
+        case "Cachorrito":
+          return edad >= 0 && edad <= 1
+        case "Adulto":
+          return edad > 1 && edad < 5
+        default:
+          return true
+      }
     }
-  }
-  return true
-})
+    return true
+  })
 
   return (
     <>
