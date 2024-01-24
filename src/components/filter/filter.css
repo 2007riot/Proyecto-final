@@ -64,7 +64,7 @@
     border-end-end-radius: 18px;
 }
 
-ul {
+.filter-ul {
     width: 75%;
     list-style: none;
     padding: 0;
@@ -80,8 +80,4 @@ ul {
 
 li:hover {
     background-color: var(--main-color-light);
-}
-
-.filterField span {
-    font-size: 15px;
 }
