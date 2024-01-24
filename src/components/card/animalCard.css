@@ -47,7 +47,7 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-/*   padding-inline: 1em; */
+  /*   padding-inline: 1em; */
   padding-left: 2em;
 }
 
@@ -90,11 +90,11 @@ main {
     column-gap: 0.5em;
     row-gap: 1.5em;
   }
-  
+
   .card:hover {
     background-color: inherit;
   }
-  
+
   .card--componentes--icono {
     width: 40px;
   }
@@ -106,7 +106,7 @@ main {
     grid-template-columns: 99%;
     row-gap: 1.5em;
   }
-  
+
   .card:hover {
     background-color: inherit;
   }
