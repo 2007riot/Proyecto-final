@@ -32,10 +32,10 @@ const AnimalInfo = () => {
         <p>Ubicación: {animal.ubicacion}</p>
         <p>Años: {animal.años}</p>
         <p>Gastos de Gestión: {animal.gastosDeGestion}</p>
-        <div>
-        <button className="button-adopta">
-          <img src="src/assets/iconoConoceme.png" alt="iconoConoceme" />
-          Conóceme</button>
+        <div className="container--button">
+        <button className="button-adopta btn--conoceme">
+          <img src="../src/assets/iconoConoceme.png" alt="iconoConoceme" className="iconoConoceme" />
+        Conóceme</button>
         </div>
       </div>
       
