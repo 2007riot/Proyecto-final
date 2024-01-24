@@ -5,7 +5,7 @@ import Adoptar from "../pages/Adoptar";
 import AnimalInfo from "../pages/AnimalInfo";
 import Casita from "../pages/Casita";
 import Donar from "../pages/Donar";
-import AboutUs from "../pages/AboutUs";
+import AboutUs from "../pages/aboutUs/AboutUs";
 
 
 
@@ -36,7 +36,7 @@ export const router = createBrowserRouter([{
             element: <Donar />
         },
         {
-            path: "/aboutUs",
+            path: "/sobreNosotras",
             element: <AboutUs />
         }
     ]
