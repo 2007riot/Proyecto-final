@@ -14,7 +14,6 @@ const Layout = () => {
     return (
         <>
             <Navbar />
-            <Header />
             <main className={claseActual}>
                 <Outlet />
             </main>
