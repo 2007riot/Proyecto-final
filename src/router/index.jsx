@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 import Layout from "../layout/Layout";
 import Adoptar from "../pages/Adoptar";
 import AnimalInfo from "../pages/animalInfo/AnimalInfo";
-import Casita from "../pages/Casita";
+import Casita from "../pages/casita/Casita";
 import Donar from "../pages/Donar";
 import SobreNosotras from "../pages/sobreNosotras/sobreNosotras";
 
