@@ -2,6 +2,7 @@ import "./formulario.css";
 import React from 'react'
 import axios from "axios"
 import { useState } from "react"
+import CardAnimalNuevo from "../cardAnimalNuevo/CardAnimalNuevo";
 
 const Formulario = () => {
 
@@ -36,6 +37,7 @@ const Formulario = () => {
     }
 
     return (
+        <>
         <div className="formContainer">
             <form onSubmit={storeAnimal} className="form">
                 <p><b>Seleccione el tipo de animal: </b></p>
@@ -79,6 +81,9 @@ const Formulario = () => {
                 <button type="submit" className="button-adopta">Guardar</button>
             </form>
         </div>
+        <CardAnimalNuevo />
+        </>
+
     )
 }
 
