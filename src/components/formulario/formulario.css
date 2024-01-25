@@ -73,10 +73,12 @@
     padding-inline: 8em;
 }
 
-
+.form--inputs--container input[type="number"]:focus,
 .form--inputs--container input[type="text"]:focus {
     background-color: var(--main-color-light);
 }
+
+
 
 
 .form select:hover,
