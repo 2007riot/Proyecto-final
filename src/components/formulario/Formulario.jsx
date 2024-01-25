@@ -2,10 +2,10 @@ import "./formulario.css";
 import React from 'react'
 import axios from "axios"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
 
 const Formulario = () => {
-
-
+    const navigate = useNavigate();
     const baseURL = "http://localhost:3000/results"
     const [tipo, setTipo] = useState("")
     const [nombre, setNombre] = useState("")
@@ -17,7 +17,7 @@ const Formulario = () => {
 
 
     const storeAnimal = async (event) => {
-
+        event.preventDefault();
         console.log(event)
         await axios.post(baseURL,
             {
@@ -32,7 +32,7 @@ const Formulario = () => {
                 imagen: imagen
             }
         )
-        //navigate("/")
+        navigate("/donar")
     }
 
     return (
