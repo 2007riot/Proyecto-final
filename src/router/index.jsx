@@ -6,6 +6,8 @@ import AnimalInfo from "../pages/animalInfo/AnimalInfo";
 import Casita from "../pages/Casita";
 import Donar from "../pages/Donar";
 import SobreNosotras from "../pages/sobreNosotras/sobreNosotras";
+import Contacto from "../pages/Contacto";
+
 
 
 
@@ -38,6 +40,10 @@ export const router = createBrowserRouter( [ {
         {
             path: "/sobreNosotras",
             element: <SobreNosotras />
+        },
+        {
+            path: "/contacto",
+            element: <Contacto />
         }
     ]
 }
