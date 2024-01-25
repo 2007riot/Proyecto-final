@@ -5,7 +5,7 @@ Adopta Amor is a website where you can adopt an animal from a local shelter in B
 ///here should add some preview pictures
 
 ### Technologies
-JavaScript and React
+`JavaScript` and `React`
 
 ### Key Features
 
@@ -19,3 +19,11 @@ npm install
 npm start
 npm run dev
 ```
+
+### Developed by
+- [Cris](https://www.linkedin.com/in/cristinacasasdesign/){:target="_blank"}
+- [Galina](https://www.linkedin.com/in/galexanrova/){:target="_blank"}
+- [Luciana](https://www.linkedin.com/in/lbonu/){:target="_blank"}
+- [Mar](https://www.linkedin.com/in/mar-domenech-/){:target="_blank"}
+- [Ziortza](https://www.linkedin.com/in/ziortzarl/){:target="_blank"}
+
