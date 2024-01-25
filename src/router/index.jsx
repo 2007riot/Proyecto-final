@@ -5,12 +5,12 @@ import Adoptar from "../pages/Adoptar";
 import AnimalInfo from "../pages/animalInfo/AnimalInfo";
 import Casita from "../pages/Casita";
 import Donar from "../pages/Donar";
-import AboutUs from "../pages/aboutUs/AboutUs";
+import SobreNosotras from "../pages/sobreNosotras/sobreNosotras";
 
 
 
 
-export const router = createBrowserRouter([{
+export const router = createBrowserRouter( [ {
     path: "/",
     element: <Layout />,
     children: [
@@ -37,8 +37,8 @@ export const router = createBrowserRouter([{
         },
         {
             path: "/sobreNosotras",
-            element: <AboutUs />
+            element: <SobreNosotras />
         }
     ]
 }
-])
+] )
