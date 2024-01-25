@@ -6,7 +6,8 @@ import AnimalInfo from "../pages/animalInfo/AnimalInfo";
 import Casita from "../pages/casita/Casita";
 import Donar from "../pages/Donar";
 import SobreNosotras from "../pages/sobreNosotras/sobreNosotras";
-import Contacto from "../pages/Contacto";
+import Contacto from "../pages/contacto/Contacto";
+
 
 
 

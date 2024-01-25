@@ -52,7 +52,7 @@ const AnimalInfo = () =>
         <p>Gastos de Gestión: {animal.gastosDeGestion}</p>
         <div className="container--button">
           <button onClick={anadirAnimal} className="button-adopta btn--conoceme">
-            <img src="../src/assets/iconoConoceme.png" alt="iconoConoceme" className="iconoConoceme" />
+            <img src="../src/assets/images/iconoConoceme.png" alt="iconoConoceme" className="iconoConoceme" />
             Conóceme</button>
         </div>
       </div>
