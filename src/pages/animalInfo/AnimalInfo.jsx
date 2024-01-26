@@ -3,10 +3,11 @@ import { useEffect } from "react";
 import { useParams } from "react-router";
 import { useState } from "react";
 import "./animalInfo.css";
+import { NavLink } from "react-router-dom";
 
 const AnimalInfo = () =>
 {
-  const [ animal, setAnimal ] = useState( [] );
+  const [ animal, setAnimal ] = useState( {} );
   const { id } = useParams();
   useEffect( () =>
   {
@@ -18,38 +19,14 @@ const AnimalInfo = () =>
     animalInfo();
   }, [ id ] );
 
-  useEffect( () =>
-  {
-    const editarInfo = async () =>
-    {
-      const response = await axios.put( `http://localhost:3000/results/${id}`,
-      {
-          tipo: tipo,
-          nombre: nombre,
-          raza: raza,
-          tamaño: tamaño,
-          cuidadosEspeciales: cuidadosEspeciales,
-          años: años,
-          imagen: imagen
-      }  );
-      setAnimal( response.data );
-    };
-    animalInfo();
-  }, [ id ] );
-
 
 
   const [ animalesCasita, setAnimalesCasita ] = useState( [] )
-  
+
   const anadirAnimal = () =>
   {
     const listadoAnimales = [ ...animalesCasita, animal ];
     setAnimalesCasita( listadoAnimales );
-  /*   // Asegúrate de que el animal no esté ya en la lista antes de agregarlo
-    if ( !animalesCasita.some( ( a ) => a.id === animal.id ) )
-    {
-      setAnimalesCasita( [ ...animalesCasita, animal ] );
-    } */
   };
   console.log( animalesCasita )
 
@@ -77,12 +54,14 @@ const AnimalInfo = () =>
             Conóceme</button>
         </div>
       </div>
-      <div className="contenedor--botones--editar">
-        <button className="botones--editar">
-          <img src="../src/assets/images/Edit.png" alt="editar" /></button>
-        <button className="botones--editar">
-          <img src="../src/assets/images/Delete.png" alt="borrar" /></button>
-      </div>
+      <NavLink to={`/editarInfo/${animal.id}`}>
+        <div className="contenedor--botones--editar">
+          <button className="botones--editar">
+            <img src="../src/assets/images/Edit.png" alt="editar" /></button>
+          <button className="botones--editar">
+            <img src="../src/assets/images/Delete.png" alt="borrar" /></button>
+        </div>
+      </NavLink>
     </div>
   );
 };

@@ -5,11 +5,9 @@ import Adoptar from "../pages/Adoptar";
 import AnimalInfo from "../pages/animalInfo/AnimalInfo";
 import Casita from "../pages/casita/Casita";
 import Donar from "../pages/donar/Donar";
-import SobreNosotras from "../pages/sobreNosotras/sobreNosotras";
+import SobreNosotras from "../pages/sobreNosotras/SobreNosotras";
 import Contacto from "../pages/contacto/Contacto";
-
-
-
+import EditarInfo from "../pages/editarInfo/editarInfo";
 
 
 
@@ -45,6 +43,10 @@ export const router = createBrowserRouter( [ {
         {
             path: "/contacto",
             element: <Contacto />
+        },
+        {
+            path: "/editarInfo/:id",
+            element: <EditarInfo/>
         }
     ]
 }
