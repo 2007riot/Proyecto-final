@@ -1,16 +1,7 @@
 {
   "results": [
     {
-      "id": "1",
-      "tipo": "perro",
-      "nombre": "Max",
-      "raza": "Labrador Retriever",
-      "tamaño": "Grande",
-      "cuidadosEspeciales": "Ninguno",
-      "ubicacion": "Barcelona",
-      "años": 3,
-      "gastosDeGestion": "500€",
-      "imagen": "https://images.pexels.com/photos/998251/pexels-photo-998251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      "id": "1"
     },
     {
       "id": "11",

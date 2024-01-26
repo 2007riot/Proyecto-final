@@ -16,7 +16,7 @@ const AnimalCard = ({ animal }) => {
         <div>
           <NavLink to={`/animal-info/${animal.id}`}><button className="card--componentes--button">
             <img
-              src="src/assets/iconoInfo.png"
+              src="src/assets/images/iconoInfo.png"
               alt="iconInfo"
               className="card--componentes--icono"
             />

@@ -18,6 +18,27 @@ const AnimalInfo = () =>
     animalInfo();
   }, [ id ] );
 
+  useEffect( () =>
+  {
+    const editarInfo = async () =>
+    {
+      const response = await axios.put( `http://localhost:3000/results/${id}`,
+      {
+          tipo: tipo,
+          nombre: nombre,
+          raza: raza,
+          tamaño: tamaño,
+          cuidadosEspeciales: cuidadosEspeciales,
+          años: años,
+          imagen: imagen
+      }  );
+      setAnimal( response.data );
+    };
+    animalInfo();
+  }, [ id ] );
+
+
+
   const [ animalesCasita, setAnimalesCasita ] = useState( [] )
   
   const anadirAnimal = () =>
@@ -52,11 +73,16 @@ const AnimalInfo = () =>
         <p>Gastos de Gestión: {animal.gastosDeGestion}</p>
         <div className="container--button">
           <button onClick={anadirAnimal} className="button-adopta btn--conoceme">
-            <img src="../src/assets/iconoConoceme.png" alt="iconoConoceme" className="iconoConoceme" />
+            <img src="../src/assets/images/iconoConoceme.png" alt="iconoConoceme" className="iconoConoceme" />
             Conóceme</button>
         </div>
       </div>
-
+      <div className="contenedor--botones--editar">
+        <button className="botones--editar">
+          <img src="../src/assets/images/Edit.png" alt="editar" /></button>
+        <button className="botones--editar">
+          <img src="../src/assets/images/Delete.png" alt="borrar" /></button>
+      </div>
     </div>
   );
 };
