@@ -32,7 +32,8 @@ const Formulario = () => {
                 imagen: imagen
             }
         )
-        navigate("/donar")
+        alert('Tu peludito se ha guardado correctamente')
+        navigate("/adoptar")
     }
 
     return (
