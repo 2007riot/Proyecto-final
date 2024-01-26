@@ -20,7 +20,7 @@ const AnimalInfo = () =>
     animalInfo();
   }, [ id ] );
 
-  const handleSubmit = async ( id ) =>
+  const eliminarAnimal = async ( id ) =>
   {
     const conf = window.confirm( '¿Quieres realmente borrar este animal?' )
     if ( conf )
@@ -70,7 +70,7 @@ const AnimalInfo = () =>
           <button className="botones--editar">
             <img src="../src/assets/images/Edit.png" alt="editar" /></button>
         </NavLink>
-        <button onClick={e => handleSubmit( animal.id )} className="botones--editar">
+        <button onClick={e => eliminarAnimal( animal.id )} className="botones--editar">
           <img src="../src/assets/images/Delete.png" alt="borrar" /></button>
       </div>
     </div>

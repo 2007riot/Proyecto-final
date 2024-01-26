@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 
 const AnimalCard = ({ animal }) => {
   return (
-/*     <div className="cardContainer"> */
     <div className="card">
       <img src={animal.imagen} alt={animal.nombre} className="card--imagen" />
       <div className="card--componentes">
@@ -25,7 +24,6 @@ const AnimalCard = ({ animal }) => {
         </div>
       </div>
     </div>
-/*     </div> */
   );
 };
 

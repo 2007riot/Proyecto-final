@@ -251,18 +251,6 @@
       "años": "7",
       "gastosDeGestion": "",
       "imagen": "https://images.pexels.com/photos/9013073/pexels-photo-9013073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": "e938",
-      "tipo": "perro",
-      "nombre": "aita",
-      "raza": "humana",
-      "tamaño": "pequeño",
-      "cuidadosEspeciales": "",
-      "ubicacion": "lleida",
-      "años": "2",
-      "gastosDeGestion": "",
-      "imagen": "https://images.pexels.com/photos/19770796/pexels-photo-19770796/free-photo-of-naturaleza-pared-animal-mascota.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ]
 }
