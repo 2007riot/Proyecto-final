@@ -58,7 +58,7 @@ const AnimalInfo = () => {
         <div className="container--button">
           <div className="container--button">
             <button onClick={anadirAnimal} className="button-adopta btn--conoceme">
-              <FontAwesomeIcon icon={faPaw} /> Conóceme</button>
+              <FontAwesomeIcon icon={faPaw} />Conóceme</button>
           </div>
         </div>
       </div>
