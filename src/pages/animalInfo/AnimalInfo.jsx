@@ -9,6 +9,7 @@ const AnimalInfo = () =>
 {
   const [ animal, setAnimal ] = useState( {} );
   const { id } = useParams();
+  const [ animalesCasita, setAnimalesCasita ] = useState( [] )
   const navigate = useNavigate()
   useEffect( () =>
   {
@@ -20,7 +21,7 @@ const AnimalInfo = () =>
     animalInfo();
   }, [ id ] );
 
-  const eliminarAnimal = async ( id ) =>
+  const handleSubmit = async ( id ) =>
   {
     const conf = window.confirm( '¿Quieres realmente borrar este animal?' )
     if ( conf )
@@ -32,13 +33,27 @@ const AnimalInfo = () =>
 
   }
 
-  const [ animalesCasita, setAnimalesCasita ] = useState( [] )
 
   const anadirAnimal = () =>
   {
-    const listadoAnimales = [ ...animalesCasita, animal ];
+    const listadoAnimales = [ ...animalesCasita, { ...animal, id: animal.id } ];
     setAnimalesCasita( listadoAnimales );
+    alert( "Animal añadido a tu casita" )
   };
+
+  useEffect( () =>
+  {
+    const animalesAlmacenados = localStorage.getItem( 'animalesCasita' );
+    if ( animalesAlmacenados )
+    {
+      setAnimalesCasita( JSON.parse( animalesAlmacenados ) );
+    }
+  }, [] );
+
+  useEffect( () =>
+  {
+    localStorage.setItem( 'animalesCasita', JSON.stringify( animalesCasita ) );
+  }, [ animalesCasita ] );
 
 
   return (
@@ -70,7 +85,7 @@ const AnimalInfo = () =>
           <button className="botones--editar">
             <img src="../src/assets/images/Edit.png" alt="editar" /></button>
         </NavLink>
-        <button onClick={e => eliminarAnimal( animal.id )} className="botones--editar">
+        <button onClick={e => handleSubmit( animal.id )} className="botones--editar">
           <img src="../src/assets/images/Delete.png" alt="borrar" /></button>
       </div>
     </div>
