@@ -25,13 +25,11 @@ const Adoptar = () => {
       const updatedFilterCriteria = {
         [category]: value,
       }
-      //filter delete or basically checking if it null or empty string then myFilteredAnimals will be all animals
       if (value === null || value === "") {
         Object.keys(prevFilterCriteria).forEach((key) => {
           updatedFilterCriteria[key] = null
         })
       } else {
-        //reset filters when new filter is clicked 
         Object.keys(prevFilterCriteria).forEach((key) => {
           if (key !== category) {
             updatedFilterCriteria[key] = null
@@ -49,7 +47,6 @@ const Adoptar = () => {
     if (filterCriteria.tamano && animal.tamaño !== filterCriteria.tamano) {
       return false
     }
-    // Edad filter logic
     if (filterCriteria.edad) {
       const edad = animal.años
 
