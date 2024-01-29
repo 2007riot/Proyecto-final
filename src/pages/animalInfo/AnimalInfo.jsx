@@ -1,13 +1,15 @@
 import axios from "axios";
 import { useEffect } from "react";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
 import { useState } from "react";
 import "./animalInfo.css";
+import { NavLink } from "react-router-dom";
 
 const AnimalInfo = () =>
 {
-  const [ animal, setAnimal ] = useState( [] );
+  const [ animal, setAnimal ] = useState( {} );
   const { id } = useParams();
+  const navigate = useNavigate()
   useEffect( () =>
   {
     const animalInfo = async () =>
@@ -18,19 +20,26 @@ const AnimalInfo = () =>
     animalInfo();
   }, [ id ] );
 
+  const eliminarAnimal = async ( id ) =>
+  {
+    const conf = window.confirm( '¿Quieres realmente borrar este animal?' )
+    if ( conf )
+    {
+      await axios.delete( `http://localhost:3000/results/${id}` )
+      alert( 'Este animal ha sido borrado correctamente' )
+      navigate( '/adoptar' )
+    }
+    
+  }
+
   const [ animalesCasita, setAnimalesCasita ] = useState( [] )
-  
+
   const anadirAnimal = () =>
   {
     const listadoAnimales = [ ...animalesCasita, animal ];
     setAnimalesCasita( listadoAnimales );
-  /*   // Asegúrate de que el animal no esté ya en la lista antes de agregarlo
-    if ( !animalesCasita.some( ( a ) => a.id === animal.id ) )
-    {
-      setAnimalesCasita( [ ...animalesCasita, animal ] );
-    } */
   };
-  console.log( animalesCasita )
+
 
   return (
     <div className="animalInfocontainer">
@@ -56,9 +65,16 @@ const AnimalInfo = () =>
             Conóceme</button>
         </div>
       </div>
-
+      <div className="contenedor--botones--editar">
+        <NavLink to={`/editarInfo/${animal.id}`}>
+          <button className="botones--editar">
+            <img src="../src/assets/images/Edit.png" alt="editar" /></button>
+        </NavLink>
+        <button onClick={e => eliminarAnimal( animal.id )} className="botones--editar">
+          <img src="../src/assets/images/Delete.png" alt="borrar" /></button>
+      </div>
     </div>
-  );
-};
+  )
+}
 
 export default AnimalInfo;

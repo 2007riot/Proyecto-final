@@ -18,7 +18,7 @@
       "nombre": "Whiskers",
       "raza": "Siamés",
       "tamaño": "Mediano",
-      "cuidadosEspeciales": "Necesita juguetes interactivos",
+      "cuidadosEspeciales": "Necesita juguetes interactivos variados",
       "ubicacion": "Barcelona",
       "años": 1,
       "gastosDeGestion": "150€",
@@ -238,42 +238,6 @@
       "ubicacion": "Barcelona",
       "años": 1,
       "gastosDeGestion": "290€",
-      "imagen": "https://images.pexels.com/photos/19770796/pexels-photo-19770796/free-photo-of-naturaleza-pared-animal-mascota.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": "c871",
-      "tipo": "",
-      "nombre": "pero",
-      "raza": "hjbbjh",
-      "tamaño": "pequeño",
-      "cuidadosEspeciales": "",
-      "ubicacion": "andalucia",
-      "años": "7",
-      "gastosDeGestion": "",
-      "imagen": "https://images.pexels.com/photos/9013073/pexels-photo-9013073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": "e938",
-      "tipo": "perro",
-      "nombre": "aita",
-      "raza": "humana",
-      "tamaño": "mediano",
-      "cuidadosEspeciales": "",
-      "ubicacion": "lleida",
-      "años": "2",
-      "gastosDeGestion": "",
-      "imagen": "https://images.pexels.com/photos/19770796/pexels-photo-19770796/free-photo-of-naturaleza-pared-animal-mascota.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-    },
-    {
-      "id": "41f7",
-      "tipo": "perro",
-      "nombre": "galina",
-      "raza": "human",
-      "tamaño": "mediano",
-      "cuidadosEspeciales": "jhbbjkbjkjk",
-      "ubicacion": "Barcelona",
-      "años": "10",
-      "gastosDeGestion": "500€",
       "imagen": "https://images.pexels.com/photos/19770796/pexels-photo-19770796/free-photo-of-naturaleza-pared-animal-mascota.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
   ]

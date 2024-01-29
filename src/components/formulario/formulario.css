@@ -1,13 +1,10 @@
-@import "src/variables-css/variables.css";
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-
 * {
     font-family: Manrope;
     box-sizing: border-box;
 }
 
 .formContainer {
-    height: 80vh;
+    height: 60vh;
     display: flex;
     align-self: center;
     justify-content: center;
