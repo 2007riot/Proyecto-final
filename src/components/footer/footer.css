@@ -11,6 +11,9 @@ footer {
     padding: 20px 10%;
     display: flex;
     flex-wrap: wrap;
+    margin-top: 2%;
+    margin-bottom: 0;
+    bottom: 0;
 }
 
 .footer-primer-bloque {

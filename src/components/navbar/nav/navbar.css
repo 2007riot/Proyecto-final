@@ -1,5 +1,4 @@
 @import "src/variables-css/variables.css";
-
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 .navbar-container {
@@ -38,7 +37,7 @@
 }
 
 .navlink.active-link,
-.navlink:active,
+#navlink:active,
 .navlink:focus {
     color: var(--text-color);
     font-weight: bold;

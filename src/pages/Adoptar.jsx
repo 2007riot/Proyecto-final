@@ -22,11 +22,9 @@ const Adoptar = () => {
 
   const handleFilterChange = (category, value) => {
     setFilterCriteria((prevFilterCriteria) => {
-
       const updatedFilterCriteria = {
         [category]: value,
       }
-
       //filter delete or basically checking if it null or empty string then myFilteredAnimals will be all animals
       if (value === null || value === "") {
         Object.keys(prevFilterCriteria).forEach((key) => {
