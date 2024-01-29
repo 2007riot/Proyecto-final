@@ -12,7 +12,7 @@
     grid-column-start: 1;
     grid-column-end: 4;
     /*     position: relative; */
-    
+
 }
 
 .filterField {
@@ -43,11 +43,13 @@
 .filterField:nth-of-type(1) {
     border-right: 2px solid var(--text-color);
 }
+
 .filterField:nth-of-type(2) {
     border-right: 2px solid var(--text-color);
 }
+
 .filterField:nth-of-type(3) {
-    border-right: 2px solid var(--text-color); 
+    border-right: 2px solid var(--text-color);
 }
 
 
@@ -59,6 +61,7 @@
     border-start-start-radius: 18px;
     border-end-start-radius: 18px;
 }
+
 .filterFieldRadiusRight:hover {
     border-start-end-radius: 18px;
     border-end-end-radius: 18px;
@@ -75,6 +78,13 @@
     margin: 0;
     margin-inline: 16px;
     background-color: white;
+}
+
+.selected-option {
+    margin-left: 5px;
+    font-weight: bold;
+    color: rgb(92, 88, 88);
+    font-size: 20px;
 }
 
 
@@ -96,4 +106,4 @@ li:hover {
         grid-column-start: 1;
         grid-column-end: 2;
     }
-  }
+}
