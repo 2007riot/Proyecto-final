@@ -22,6 +22,7 @@ const Adoptar = () => {
 
   const handleFilterChange = (category, value) => {
     setFilterCriteria((prevFilterCriteria) => {
+
       const updatedFilterCriteria = {
         [category]: value,
       }

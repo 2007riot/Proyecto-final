@@ -1,0 +1,8 @@
+.ocultarNotificacion {
+    position: absolute;
+    bottom: 10%;
+    display: none;
+}
+.mostrarNotificacion {
+    display: block;
+}
