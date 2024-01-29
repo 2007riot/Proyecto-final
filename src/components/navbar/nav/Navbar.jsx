@@ -4,8 +4,7 @@ import Logo from "../logo/Logo";
 
 
 
-const Navbar = () =>
-{
+const Navbar = () => {
 
   return (
 
@@ -20,9 +19,11 @@ const Navbar = () =>
         <div className="logo-container">
           <NavLink to='/'><Logo /></NavLink>
         </div>
-        <div className="casita-container">
-          <img className="casita" alt="casita" src="src\assets\images\casitaIcon.png" />
-        </div>
+        <NavLink to='/casita'>
+          <div className="casita-container">
+            <img className="casita" alt="casita" src="src\assets\images\casitaIcon.png" />
+          </div>
+        </NavLink>
       </div>
     </nav>
   )
