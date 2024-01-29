@@ -33,10 +33,10 @@ const EditarInfo = () =>
                 <p><b>Seleccione el tipo de animal: </b></p>
                 <div className="form--tipo">
                     <label>
-                        <input value="Perro" checked={animalGuardado.tipo === "Perro"} type="radio" id="Perro" name="tipo" onChange={( event ) => setAnimalGuardado( { ...animalGuardado, tipo: event.target.value } )} />Perro
+                        <input value="perro" checked={animalGuardado.tipo === "perro"} type="radio" id="perro" name="tipo" onChange={( event ) => setAnimalGuardado( { ...animalGuardado, tipo: event.target.value } )} />Perro
                     </label>
                     <label>
-                        <input value="Gato" checked={animalGuardado.tipo === "Gato"} type="radio" id="Gato" name="tipo" onChange={( event ) => setAnimalGuardado( { ...animalGuardado, tipo: event.target.value } )} />Gato
+                        <input value="gato" checked={animalGuardado.tipo === "gato"} type="radio" id="gato" name="tipo" onChange={( event ) => setAnimalGuardado( { ...animalGuardado, tipo: event.target.value } )} />Gato
                     </label>
                 </div>
                 <div className="form--inputs--container">

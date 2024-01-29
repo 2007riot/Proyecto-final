@@ -7,7 +7,7 @@ import Casita from "../pages/casita/Casita";
 import Donar from "../pages/donar/Donar";
 import SobreNosotras from "../pages/sobreNosotras/SobreNosotras";
 import Contacto from "../pages/contacto/Contacto";
-import EditarInfo from "../pages/editarInfo/EditarInfo";
+import EditarInfo from "../pages/editarInfo/editarInfo";
 
 
 

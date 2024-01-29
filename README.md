@@ -139,10 +139,10 @@ const Formulario = () => {
                 <p><b>Seleccione el tipo de animal: </b></p>
                 <div className="form--tipo">
                     <label>
-                        <input value="Perro" checked={tipo === "Perro"} type="radio" id="Perro" name="tipo" onChange={(event) => setTipo(event.target.value)} />Perro
+                        <input value="perro" checked={tipo === "perro"} type="radio" id="perro" name="tipo" onChange={(event) => setTipo(event.target.value)} />Perro
                     </label>
                     <label>
-                        <input value="Gato" checked={tipo === "Gato"} type="radio" id="Gato" name="tipo" onChange={(event) => setTipo(event.target.value)} />Gato
+                        <input value="gato" checked={tipo === "gato"} type="radio" id="gato" name="tipo" onChange={(event) => setTipo(event.target.value)} />Gato
                     </label>
                 </div>
                 <div className="form--inputs--container">
