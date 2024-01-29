@@ -1,15 +1,17 @@
 import axios from "axios";
 import { useEffect } from "react";
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import { useState } from "react";
 import "./animalInfo.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaw } from '@fortawesome/free-solid-svg-icons';
+import { NavLink } from "react-router-dom";
 
 const AnimalInfo = () => {
   const [animal, setAnimal] = useState([]);
   const { id } = useParams();
   const [animalesCasita, setAnimalesCasita] = useState([]);
+  const navigate = useNavigate()
 
   useEffect(() => {
     const animalInfo = async () => {
@@ -36,6 +38,17 @@ const AnimalInfo = () => {
     localStorage.setItem('animalesCasita', JSON.stringify(animalesCasita));
   }, [animalesCasita]);
 
+  const handleSubmit = async ( id ) =>
+  {
+    const conf = window.confirm( '¿Quieres realmente borrar este animal?' )
+    if ( conf )
+    {
+      await axios.delete( `http://localhost:3000/results/${id}` )
+      alert( 'Este animal ha sido borrado correctamente' )
+      navigate( '/adoptar' )
+    }
+  }
+
 
   return (
     <div className="animalInfocontainer">
@@ -61,6 +74,14 @@ const AnimalInfo = () => {
               <FontAwesomeIcon icon={faPaw} />Conóceme</button>
           </div>
         </div>
+      </div>
+      <div className="contenedor--botones--editar">
+        <NavLink to={`/editarInfo/${animal.id}`}>
+          <button className="botones--editar">
+            <img src="../src/assets/images/Edit.png" alt="editar" /></button>
+        </NavLink>
+        <button onClick={e => handleSubmit( animal.id )} className="botones--editar">
+          <img src="../src/assets/images/Delete.png" alt="borrar" /></button>
       </div>
     </div>
   );
