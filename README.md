@@ -22,6 +22,8 @@ Adopta Amor is a website where you can adopt an animal from a local shelter in B
 #### Donate animal view
 <img width="900" alt="Screenshot 2024-01-29 at 10 13 44" src="https://github.com/2007riot/Proyecto-final/assets/73304608/676f76a5-c66f-4738-9df9-67bc0cfc8114">
 
+#### Features
+Users can view a list of animals available for adoption, filter by animal type, size, and age. Additionally, users have the option to offer their animals for adoption by providing the necessary information. They can also delete or edit animals from the database.
 
 ### How to Install and Run the Project
 In order to run the project, you need VSCode and Node.js installed on your machine.
@@ -37,6 +39,67 @@ npm run dev
 `npm start` - to run JSON-server 
 
 `npm run dev` - to run the project in the browser
+
+### Main implementation
+
+#### Create a Browser Router and routes configuration
+
+```javascript
+export const router = createBrowserRouter( [ {
+    path: "/",
+    element: <Layout />,
+    children: [
+        {
+            path: "/",
+            element: <Home />
+        },
+        {
+            path: "/adoptar",
+            element: <Adoptar />
+        },
+        {
+            path: `/animal-info/:id`,
+            element: <AnimalInfo />
+        },
+        {
+            path: "/casita",
+            element: <Casita />
+        },
+        {
+            path: "/donar",
+            element: <Donar />
+        },
+        {
+            path: "/sobreNosotras",
+            element: <SobreNosotras />
+        },
+        {
+            path: "/contacto",
+            element: <Contacto />
+        },
+        {
+            path: "/editarInfo/:id",
+            element: <EditarInfo/>
+        }
+    ]
+}
+] )
+```
+
+#### API call with axios
+```javascript
+useEffect(() => {
+    const data = async () => {
+      const response = await axios.get("http://localhost:3000/results"
+      );
+      const info = await response.data;
+      setAnimales(info);
+      console.log(info)
+    }
+
+    data()
+  }, [])
+```
 
 ### Developed by
 - [Cris](https://www.linkedin.com/in/cristinacasasdesign/)
