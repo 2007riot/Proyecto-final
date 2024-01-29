@@ -1,8 +1,13 @@
+.formContainerContacto {
+    height: 80vh;
+}
+
 .ocultarNotificacion {
-    position: absolute;
-    bottom: 10%;
     display: none;
+    width: 100%;
+    text-align: center;
 }
 .mostrarNotificacion {
     display: block;
 }
+

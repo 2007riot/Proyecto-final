@@ -47,6 +47,7 @@ h5 {
     font-weight: 700;
     justify-self: center;
     margin: 5px;
+    cursor: pointer;
 }
 
 .contenedor-x-card {
@@ -57,7 +58,7 @@ h5 {
 .x-card {
     width: 11%;
     margin: 7px;
-
+    cursor: pointer;
 
 }
 
