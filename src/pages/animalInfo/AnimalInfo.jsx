@@ -22,6 +22,7 @@ const AnimalInfo = () => {
   const anadirAnimal = () => {
     const listadoAnimales = [...animalesCasita, { ...animal, id: animal.id }];
     setAnimalesCasita(listadoAnimales);
+    alert("Animal añadido a tu casita")
   };
 
   useEffect(() => {
@@ -35,7 +36,6 @@ const AnimalInfo = () => {
     localStorage.setItem('animalesCasita', JSON.stringify(animalesCasita));
   }, [animalesCasita]);
 
-  console.log(animalesCasita)
 
   return (
     <div className="animalInfocontainer">
