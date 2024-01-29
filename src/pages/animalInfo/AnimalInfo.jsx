@@ -3,6 +3,8 @@ import { useEffect } from "react";
 import { useParams } from "react-router";
 import { useState } from "react";
 import "./animalInfo.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPaw } from '@fortawesome/free-solid-svg-icons';
 
 const AnimalInfo = () => {
   const [animal, setAnimal] = useState([]);
@@ -56,8 +58,7 @@ const AnimalInfo = () => {
         <div className="container--button">
           <div className="container--button">
             <button onClick={anadirAnimal} className="button-adopta btn--conoceme">
-              <img src="../src/assets/iconoConoceme.png" alt="iconoConoceme" className="iconoConoceme" />
-              Conóceme</button>
+              <FontAwesomeIcon icon={faPaw} /> Conóceme</button>
           </div>
         </div>
       </div>
