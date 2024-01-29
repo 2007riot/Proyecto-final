@@ -45,8 +45,8 @@ h5 {
     text-align: center;
     font-size: 14px;
     font-weight: 700;
-    justify-self: center;
     margin: 5px;
+    margin-left: 2.7em;
     cursor: pointer;
 }
 

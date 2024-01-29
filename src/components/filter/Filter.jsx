@@ -66,6 +66,7 @@ const Filter = ( { onClick } ) =>
 
     return (
         <div className="filter">
+            {/* Animal filter */}
             <button className="filterField filterFieldRadiusLeft" onClick={toggleAnimal}>
                 Animales {selectedAnimal && <span className="selected-option">{selectedAnimal}</span>} <FontAwesomeIcon icon={faCaretDown} />
                 {isAnimalListOpen ? (
@@ -79,6 +80,8 @@ const Filter = ( { onClick } ) =>
                     </ul>
                 ) : null}
             </button>
+
+            {/* Tamaño filter */}
             <button className="filterField" onClick={toggleTamano}>
                 Tamaño {selectedTamano && <span className="selected-option">{selectedTamano}</span>} <FontAwesomeIcon icon={faCaretDown} />
                 {isTamanoListOpen ? (
@@ -95,6 +98,8 @@ const Filter = ( { onClick } ) =>
                     </ul>
                 ) : null}
             </button>
+
+            {/* Edad filter */}
             <button className="filterField" onClick={toggleEdad}>
                 Edad {selectedEdad && <span className="selected-option">{selectedEdad}</span>} <FontAwesomeIcon icon={faCaretDown} />
                 {isEdadListOpen ? (
@@ -108,6 +113,7 @@ const Filter = ( { onClick } ) =>
                     </ul>
                 ) : null}
             </button>
+            {/* Delete Filter */}
             <button className="filterField filterFieldRadiusRight" onClick={clearFilters}>
                 Borrar filtros <FontAwesomeIcon icon={faTrash} />
             </button>

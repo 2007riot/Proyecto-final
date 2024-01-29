@@ -24,7 +24,7 @@ const EditarInfo = () =>
         const animalModificado = await axios.put( `http://localhost:3000/results/${id}`, animalGuardado )
         setAnimalGuardado( animalModificado.data )
         alert( 'Datos modificados correctamente' )
-        navigate('/adoptar')
+        navigate( '/adoptar' )
     }
 
     return (
