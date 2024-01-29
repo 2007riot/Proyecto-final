@@ -1,13 +1,10 @@
-@import "src/variables-css/variables.css";
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
-
 * {
     font-family: Manrope;
     box-sizing: border-box;
 }
 
 .formContainer {
-    height: 100vh;
+    height: 60vh;
     display: flex;
     align-self: center;
     justify-content: center;
@@ -73,10 +70,12 @@
     padding-inline: 8em;
 }
 
-
+.form--inputs--container input[type="number"]:focus,
 .form--inputs--container input[type="text"]:focus {
     background-color: var(--main-color-light);
 }
+
+
 
 
 .form select:hover,

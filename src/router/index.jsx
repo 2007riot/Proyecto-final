@@ -4,12 +4,14 @@ import Layout from "../layout/Layout";
 import Adoptar from "../pages/Adoptar";
 import AnimalInfo from "../pages/animalInfo/AnimalInfo";
 import Casita from "../pages/casita/Casita";
-import Donar from "../pages/Donar";
+import Donar from "../pages/donar/Donar";
+import SobreNosotras from "../pages/sobreNosotras/SobreNosotras";
+import Contacto from "../pages/contacto/Contacto";
+import EditarInfo from "../pages/editarInfo/editarInfo";
 
 
 
-
-export const router = createBrowserRouter([{
+export const router = createBrowserRouter( [ {
     path: "/",
     element: <Layout />,
     children: [
@@ -22,8 +24,7 @@ export const router = createBrowserRouter([{
             element: <Adoptar />
         },
         {
-            path: `/animal-info/:id`
-            ,
+            path: `/animal-info/:id`,
             element: <AnimalInfo />
         },
         {
@@ -33,7 +34,19 @@ export const router = createBrowserRouter([{
         {
             path: "/donar",
             element: <Donar />
+        },
+        {
+            path: "/sobreNosotras",
+            element: <SobreNosotras />
+        },
+        {
+            path: "/contacto",
+            element: <Contacto />
+        },
+        {
+            path: "/editarInfo/:id",
+            element: <EditarInfo/>
         }
     ]
 }
-])
+] )

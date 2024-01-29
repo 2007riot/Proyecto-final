@@ -3,6 +3,7 @@ import Navbar from "../components/navbar/nav/Navbar"
 import Footer from "../components/footer/Footer"
 import './layout.css'
 
+
 const Layout = () => {
     const location = useLocation();
     const classes = {
