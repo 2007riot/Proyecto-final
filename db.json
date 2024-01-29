@@ -2,7 +2,7 @@
   "results": [
     {
       "id": "1",
-      "tipo": "perro",
+      "tipo": "Perro",
       "nombre": "Max",
       "raza": "Labrador Retriever",
       "tamaño": "Grande",
@@ -14,7 +14,7 @@
     },
     {
       "id": "11",
-      "tipo": "gato",
+      "tipo": "Gato",
       "nombre": "Whiskers",
       "raza": "Siamés",
       "tamaño": "Mediano",
@@ -26,7 +26,7 @@
     },
     {
       "id": "2",
-      "tipo": "perro",
+      "tipo": "Perro",
       "nombre": "Luna",
       "raza": "Bulldog Francés",
       "tamaño": "Pequeño",
@@ -38,7 +38,7 @@
     },
     {
       "id": "12",
-      "tipo": "gato",
+      "tipo": "Gato",
       "nombre": "Milo",
       "raza": "Persa",
       "tamaño": "Pequeño",
@@ -50,7 +50,7 @@
     },
     {
       "id": "3",
-      "tipo": "perro",
+      "tipo": "Perro",
       "nombre": "Rocky",
       "raza": "Golden Retriever",
       "tamaño": "Mediano",
@@ -62,7 +62,7 @@
     },
     {
       "id": "15",
-      "tipo": "gato",
+      "tipo": "Gato",
       "nombre": "Simba",
       "raza": "Sphynx",
       "tamaño": "Pequeño",
@@ -74,7 +74,7 @@
     },
     {
       "id": "4",
-      "tipo": "perro",
+      "tipo": "Perro",
       "nombre": "Bella",
       "raza": "Shih Tzu",
       "tamaño": "Pequeño",
@@ -86,7 +86,7 @@
     },
     {
       "id": "18",
-      "tipo": "gato",
+      "tipo": "Gato",
       "nombre": "Oscar",
       "raza": "British Shorthair",
       "tamaño": "Mediano",
@@ -98,7 +98,7 @@
     },
     {
       "id": "5",
-      "tipo": "perro",
+      "tipo": "Perro",
       "nombre": "Maximus",
       "raza": "Doberman",
       "tamaño": "Grande",
@@ -110,7 +110,7 @@
     },
     {
       "id": "6",
-      "tipo": "perro",
+      "tipo": "Perro",
       "nombre": "Coco",
       "raza": "Chihuahua",
       "tamaño": "Miniatura",
@@ -122,7 +122,7 @@
     },
     {
       "id": "7",
-      "tipo": "perro",
+      "tipo": "Perro",
       "nombre": "Charlie",
       "raza": "Boxer",
       "tamaño": "Grande",
@@ -134,7 +134,7 @@
     },
     {
       "id": "14",
-      "tipo": "gato",
+      "tipo": "Gato",
       "nombre": "Luna",
       "raza": "Bengala",
       "tamaño": "Mediano",
@@ -146,7 +146,7 @@
     },
     {
       "id": "8",
-      "tipo": "perro",
+      "tipo": "Perro",
       "nombre": "Daisy",
       "raza": "Cavalier Charles",
       "tamaño": "Mediano",
@@ -158,7 +158,7 @@
     },
     {
       "id": "19",
-      "tipo": "gato",
+      "tipo": "Gato",
       "nombre": "Zoe",
       "raza": "Siamese",
       "tamaño": "Pequeño",
@@ -170,7 +170,7 @@
     },
     {
       "id": "9",
-      "tipo": "perro",
+      "tipo": "Perro",
       "nombre": "Rex",
       "raza": "Dachshund",
       "tamaño": "Pequeño",
@@ -182,7 +182,7 @@
     },
     {
       "id": "10",
-      "tipo": "perro",
+      "tipo": "Perro",
       "nombre": "Lucy",
       "raza": "Poodle",
       "tamaño": "Mediano",
@@ -194,7 +194,7 @@
     },
     {
       "id": "13",
-      "tipo": "gato",
+      "tipo": "Gato",
       "nombre": "Oliver",
       "raza": "Maine Coon",
       "tamaño": "Grande",
@@ -206,7 +206,7 @@
     },
     {
       "id": "16",
-      "tipo": "gato",
+      "tipo": "Gato",
       "nombre": "Cleo",
       "raza": "Ragdoll",
       "tamaño": "Mediano",
@@ -218,7 +218,7 @@
     },
     {
       "id": "17",
-      "tipo": "gato",
+      "tipo": "Gato",
       "nombre": "Nala",
       "raza": "Scottish Fold",
       "tamaño": "Pequeño",
@@ -230,7 +230,7 @@
     },
     {
       "id": "20",
-      "tipo": "gato",
+      "tipo": "Gato",
       "nombre": "Gizmo",
       "raza": "Cornish Rex",
       "tamaño": "Mediano",

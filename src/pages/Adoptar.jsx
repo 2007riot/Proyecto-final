@@ -1,78 +1,96 @@
 import { useEffect } from "react";
-import { useState } from "react"
+import { useState } from "react";
 import AnimalCard from "../components/card/AnimalCard";
 import axios from "axios";
 import Filter from "../components/filter/Filter";
 
+const Adoptar = () =>
+{
+  const [ animales, setAnimales ] = useState( [] );
+  const [ filterCriteria, setFilterCriteria ] = useState( {} );
 
-const Adoptar = () => {
-  const [animales, setAnimales] = useState([]);
-  const [filterCriteria, setFilterCriteria] = useState({})
-  useEffect(() => {
-    const data = async () => {
-      const response = await axios.get("http://localhost:3000/results"
-      );
-      const info = await response.data;
-      setAnimales(info);
-      console.log(info)
-    }
+  useEffect( () =>
+  {
+    const fetchData = async () =>
+    {
+      try
+      {
+        const response = await axios.get( "http://localhost:3000/results" );
+        const info = response.data;
+        setAnimales( info );
+        console.log( info );
+      } catch ( error )
+      {
+        console.error( "Error fetching data:", error );
+      }
+    };
 
-    data()
-  }, [])
+    fetchData();
+  }, [] );
 
-  const handleFilterChange = (category, value) => {
-    setFilterCriteria((prevFilterCriteria) => {
+  const handleFilterChange = ( category, value ) =>
+  {
+    setFilterCriteria( ( prevFilterCriteria ) =>
+    {
       const updatedFilterCriteria = {
-        [category]: value,
-      }
-      //filter delete or basically checking if it null or empty string then myFilteredAnimals will be all animals
-      if (value === null || value === "") {
-        Object.keys(prevFilterCriteria).forEach((key) => {
-          updatedFilterCriteria[key] = null
-        })
-      } else {
-        //reset filters when new filter is clicked 
-        Object.keys(prevFilterCriteria).forEach((key) => {
-          if (key !== category) {
-            updatedFilterCriteria[key] = null
-          }
-        })
-      }
-      return updatedFilterCriteria
-    })
-  }
+        [ category ]: value,
+      };
 
-  const filteredAnimales = animales.filter((animal) => {
-    if (filterCriteria.tipo && animal.tipo !== filterCriteria.tipo) {
-      return false
+      // Reset all filters when value is null or an empty string
+      if ( value === null || value === "" )
+      {
+        return {};
+      }
+
+      // Reset filters when a new filter is clicked
+      Object.keys( prevFilterCriteria ).forEach( ( key ) =>
+      {
+        if ( key !== category )
+        {
+          updatedFilterCriteria[ key ] = null;
+        }
+      } );
+
+      return updatedFilterCriteria;
+    } );
+  };
+
+  const filteredAnimales = animales.filter( ( animal ) =>
+  {
+    if ( filterCriteria.tipo && animal.tipo !== filterCriteria.tipo )
+    {
+      return false;
     }
-    if (filterCriteria.tamano && animal.tamaño !== filterCriteria.tamano) {
-      return false
+    if ( filterCriteria.tamano && animal.tamaño !== filterCriteria.tamano )
+    {
+      return false;
     }
     // Edad filter logic
-    if (filterCriteria.edad) {
-      const edad = animal.años
+    if ( filterCriteria.edad )
+    {
+      const edad = animal.años;
 
-      switch (filterCriteria.edad) {
+      switch ( filterCriteria.edad )
+      {
         case "Cachorrito":
-          return edad >= 0 && edad <= 1
+          return edad >= 0 && edad <= 1;
         case "Adulto":
-          return edad > 1 && edad < 5
+          return edad > 1 && edad < 5;
         default:
-          return true
+          return true;
       }
     }
-    return true
-  })
+    return true;
+  } );
 
   return (
     <>
       <Filter onClick={handleFilterChange} />
-      {filteredAnimales.map((animal) => (
+      {filteredAnimales.map( ( animal ) => (
         <AnimalCard key={animal.id} animal={animal} />
-      ))}
+      ) )}
     </>
-  )
-}
+  );
+};
 
-export default Adoptar
+export default Adoptar;
