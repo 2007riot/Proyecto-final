@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 
 const AnimalCard = ({ animal }) => {
   return (
-/*     <div className="cardContainer"> */
     <div className="card">
       <img src={animal.imagen} alt={animal.nombre} className="card--imagen" />
       <div className="card--componentes">
@@ -16,7 +15,7 @@ const AnimalCard = ({ animal }) => {
         <div>
           <NavLink to={`/animal-info/${animal.id}`}><button className="card--componentes--button">
             <img
-              src="src/assets/iconoInfo.png"
+              src="src/assets/images/iconoInfo.png"
               alt="iconInfo"
               className="card--componentes--icono"
             />
@@ -25,7 +24,6 @@ const AnimalCard = ({ animal }) => {
         </div>
       </div>
     </div>
-/*     </div> */
   );
 };
 
